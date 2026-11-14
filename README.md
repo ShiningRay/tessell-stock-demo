@@ -39,6 +39,7 @@ dependencies:
 ```powershell
 $env:PATH="C:\msys64\ucrt64\bin;$env:PATH"
 shards install
+New-Item -ItemType Directory -Force -Path bin | Out-Null
 crystal build src/stock_demo.cr -o bin/stock_demo.exe
 bin/stock_demo.exe
 ```
