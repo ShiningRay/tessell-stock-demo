@@ -1,0 +1,21 @@
+name: tessell-stock-demo
+version: 0.1.0
+description: |
+  A simulated A-share market terminal demo built with Tessell
+  (Crystal retained-mode self-drawn GUI framework).
+
+authors:
+  - ShiningRay
+
+crystal: ">= 1.22.0"
+
+license: MIT
+
+dependencies:
+  tessell:
+    github: ShiningRay/tessell
+    branch: main
+
+targets:
+  tessell-stock-demo:
+    main: src/stock_demo.cr
